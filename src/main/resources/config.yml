@@ -1,0 +1,9 @@
+versaalert:
+  player:
+    inventory:
+      full:
+        title: "&fINVENTORY FULL"
+        subtitle: "&fThe inventory is full, you can't pick any more items up."
+  messages:
+    reload: "&8[&bVersaAlert&8] &fThe plugin configuration has been reloaded."
+    no-permission: "&8[&bVersaAlert&8] &cYou do not have permission to use this."

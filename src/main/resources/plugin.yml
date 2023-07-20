@@ -1,0 +1,11 @@
+name: VersaAlert
+version: '${project.version}'
+main: dev.ayame.versaalert.VersaAlert
+api-version: '1.13'
+commands:
+  versaalert:
+    description: "Main command"
+permissions:
+  versaalert.admin:
+    description: "Allows you to reload the plugin"
+    default: op
