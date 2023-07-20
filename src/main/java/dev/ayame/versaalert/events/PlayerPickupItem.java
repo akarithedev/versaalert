@@ -8,11 +8,11 @@ import org.bukkit.inventory.ItemStack;
 
 public class PlayerPickupItem implements Listener {
     @EventHandler
-    @SuppressWarnings("deprecated")
+    @Deprecated
     public void onPlayerPickupItem(final PlayerPickupItemEvent event) {
        final Player player = event.getPlayer();
         if (!canPickUpItems(player, event.getItem().getItemStack())) {
-            dataHandler.INSTANCE.runTask(()-> player.sendTitle(dataHandler.INSTANCE.getConfig("versaalert.player.inventory.full.title", true).toString(), dataHandler.INSTANCE.getConfig("versaalert.player.inventory.full.subtitle", true).toString()));
+            player.sendTitle(dataHandler.INSTANCE.getConfig("versaalert.player.inventory.full.title", true).toString(), dataHandler.INSTANCE.getConfig("versaalert.player.inventory.full.subtitle", true).toString());
         }
     }
     private boolean canPickUpItems(final Player player, final ItemStack item) {
