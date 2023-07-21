@@ -13,7 +13,8 @@ public final class VersaAlert extends JavaPlugin {
     public void onEnable() {
         INSTANCE = this;
         new dataHandler();
-        getServer().getPluginManager().registerEvents(new PlayerPickupItem(), this);
+        getServer().getPluginManager().registerEvents(new PlayerPickupItem(this), this);
+        System.out.println("Registered");
         Objects.requireNonNull(getCommand("versaalert")).setExecutor(new MainCommand());
         getLogger().info("Loading config...");
         getLogger().info("Config loaded");

@@ -27,9 +27,9 @@ public class MainCommand implements CommandExecutor {
                 } else if(args[0].equals("version")) {
                     if(sender instanceof Player) {
                         Player player = (Player) sender;
-                        player.sendMessage("§fYou are running version §b" + VersaAlert.INSTANCE.getDescription().getVersion() + "§fof versaalert");
+                        player.sendMessage("§fYou are running version §b" + VersaAlert.INSTANCE.getDescription().getVersion() + " §fof versaalert");
                     } else {
-                        sender.sendMessage("§fYou are running version §b" + VersaAlert.INSTANCE.getDescription().getVersion() + "§fof versaalert");
+                        sender.sendMessage("§fYou are running version §b" + VersaAlert.INSTANCE.getDescription().getVersion() + " §fof versaalert");
 
                     }
                 }
